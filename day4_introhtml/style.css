@@ -1,0 +1,117 @@
+html{scroll-behavior: smooth;}
+
+.header{
+    display: flex;
+}
+.headerlink{
+    width: 20%;
+    display: block;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+    transition: ease-in-out 300ms;
+}
+.headerlink:hover{
+    opacity: 0.6;
+    transform: scale(1.5) translateX(-20px)
+}
+.headertitle{
+    width: 79%;
+    color: green;
+    text-align: center;
+}
+/* -----SITELINKS----- */
+.sitelinks{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+}
+.navlink{
+    display: inline-block;
+    text-align: center;
+    padding: 1em 2em;
+    width: 33.3%;
+    color: whitesmoke;
+}
+.navlink:hover{
+    background-color: whitesmoke;
+    border: dashed 2px grey;
+    color: red;
+}
+/* ----- MAINBODY -----*/
+.mainbody{
+    border: solid green 1px;
+    display: flex;
+    flex-wrap: wrap;
+} 
+.main_div{
+    width: 66%;
+}
+.pagelinks{
+    width: 31%;
+}
+.main_div section{
+    background-color: cyan;
+    padding: 1em 2em;
+}
+.main_div article{
+    background-color: cyan;
+    padding: 1em 2em;
+}
+/*----- PAGELINKS -----*/
+.pagelinks{
+    padding: 1em;
+}
+.linknav{
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    text-align: center;
+    color: red;
+}
+.linknav:hover{
+    color: darkmagenta;
+    font-weight: 900;
+}
+/*------FIGURE------*/
+img{width: 100%; display: block;}
+.figuring{
+    width: 70%;
+    margin: 2% auto;
+    position: relative;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.imgtitle{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    text-align: center;
+}
+/*-------FOOTER--------*/
+.contact{
+    background-color: rgb(10, 30, 5);
+    color: whitesmoke;
+    display: flex;
+    padding: 20px;
+}
+.contactcolumn{
+    width: 33%;
+}
+.policieslink{
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
+    padding-top: 10px;
+}
+.followicon{
+    width: 50px;
+    display: inline-block;
+    padding-right: 1em;
+    opacity: 0.5;
+}
+.followicon:hover{
+    opacity: 1;
+}

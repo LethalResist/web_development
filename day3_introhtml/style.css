@@ -1,0 +1,137 @@
+body{background-color: beige;}
+img{width: 100%;}
+div.imgframe{
+      border: inset 5px cornsilk;
+      width: 700px;
+      margin: auto;
+      position: relative; 
+      color: aliceblue;
+}
+.imgtitle{
+      position: absolute; 
+      bottom: 40%;
+      right: 30%;
+      left: 30%;
+      top: 40%;
+      text-align: center;
+      padding: 10px;
+      background-color:rgb(47, 79, 52); 
+}
+
+/* z-index  - The order of the elements */
+.imgframe{
+      border: inset 20px ;
+      width: 700px;
+      margin: auto;
+      position: relative;
+      z-index: 0;
+}
+
+.imgtitle2{
+      position: absolute;
+      z-index: 2;
+      bottom: 40%;
+      right: 30%;
+      left: 30%;
+      top: 40%;
+      text-align: center;
+      padding: 10px;
+      background-color:rgba(107, 53, 10, 0.8);  
+      /*rgba = The A here is the opcity of the background. How transparent it is*/
+
+}
+
+.imgparag{
+      position:absolute;
+      text-align: center;
+      z-index:1;
+      top: 50%;
+      left: 27%;
+      color: whitesmoke;
+      font-size: 30px;
+}
+
+.imglink{
+      position:absolute;
+      bottom: 10%;
+      color: chocolate;
+      background-color:burlywood;
+      padding: 10px 20px;
+      left: 40%;
+      right: 40%;
+      text-align: center;
+      border-radius: 10px;
+      text-decoration: none; /*Removes the underline under the text*/
+}
+
+.imglink:hover /*Chnages the cursor*/{
+      background-color: black;
+      box-shadow: 2px 2px 5px white;
+}
+.sectioncard {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.firstImg{
+    width: 100%;
+    height: auto; 
+    /* Ensure the image stays beneath the text */
+    position: relative;
+    z-index: 0;
+}
+.card {
+    margin: 30px auto;
+    padding: 20px;
+    width: 400px;
+    background-color: rgb(244, 244, 244);
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px gray;
+    transition: transform 200ms ease-in-out;
+    overflow: hidden;
+}
+
+.cardlink {
+    display: none;
+    color: brown;
+    font-weight: 200;
+    text-decoration: none;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Adjusted to scale up slightly instead of down */
+    cursor: pointer;
+}
+
+.card:hover .cardlink {
+    display: inline;
+}
+
+.cardinfo {
+    margin-top: 20px;
+}
+
+.portraitcard {
+    position: relative;
+}
+.portraitinfo{
+    position: absolute;
+    top: 100%;
+    left: 5%;
+    right: 5%;
+    text-align: center;
+}
+/* Optional: Improve image styling within the card */
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+/* the second image was overflowing out of the frame so i deleted the height from the cards and gave an auto max-height to the secondImg */
+.secondImg{
+    width: auto;
+    max-height: 100%;
+}
