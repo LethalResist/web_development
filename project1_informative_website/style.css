@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+  }
+  
+  header, footer {
+    color: white;
+    background-color: #212121;
+    text-align: center;
+  }
+  
+  /* Header */
+  
+  .flag {
+    width: 100px;
+    vertical-align: middle;
+    margin-right: 5px;
+    animation: flagAn 1.5s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+  }
+  
+  .displaytitle {
+    display:inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+  }
+  
+  .title {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    animation: headerTxtAn 2s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+  }
+
+  .img_container1 { 
+    position: relative;
+    text-align: center;
+  }
+  
+  .img_a1 {
+    width: 100%;
+    filter: sepia(30%);
+  }
+
+  /* Header Animation */
+  
+  @keyframes flagAn {
+    0% {transform: translate(70%);}
+    100% {transform: translate(0%);}
+  }
+  
+  @keyframes headerTxtAn {
+    0% {transform: translate(-110%);}
+    100% {transform: translate(0%);}
+  }
+  
+  /* Inside Text */
+
+.inside_container {
+    font-size: 150%;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+  
+  .inside_container h1 {
+    animation: inside_h1 2s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+  } 
+  
+  .inside_image {
+    margin-bottom: 0;
+    height: 5px;
+    color: white;
+    background-color: white;
+    animation: inside_h2 4s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+  }
+
+    /* Inside Text Animation */
+
+    @keyframes inside_h1 {
+    0% {transform: translate(0, 180%);}
+    100% {transform: translate(0, 0%);}
+  }
+
+  @keyframes inside_h2 {
+    0% {width: 0%; opacity: 0%;}
+    5% {opacity: 100%;}
+    50% {width: 100%}
+    95% {opacity: 100%;}
+    100% {width: 0%; opacity: 0%;}
+  }
+
+  /* Button Links */
+
+  .cathedralLink, .monasteryLink {
+    background-color: #13a0c4;
+    color: white;
+    padding: 1em 3em;
+    text-align: center;
+    border-radius: 30px;
+    display: inline;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .cathedralLink:hover, .monasteryLink:hover {
+    background-color: #13a0c4;
+    box-shadow: 0px 0px 0px 3px white;
+  }
+  
+  .cathedralLink {
+    margin-right: 2%;
+  }
+  
+  .internalLinks {
+    position: absolute;
+    width: 100%;
+    top: 80%;
+  }
+  
+  .internalLinks a {
+    text-decoration: none;
+  }
+  
+  /* History */
+  .content {
+    margin-top: 5%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }  
+  
+  .history {
+    text-align: center;
+    margin: 5% 10% 5% 10%;
+  }
+  
+  /* Special */
+
+  .special, .special_image {
+    display:inline-block;
+    width: 49.5%;
+    vertical-align: middle;
+    margin: 0;
+  }
+  
+  .special {
+    padding-right: 8%;
+    padding-left: 8%;
+    text-align: center;
+  }
+  
+  .button_link {
+    text-decoration: none;
+  }
+  
+  .section_button {
+    background-color: #13a0c4;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    border-radius: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10%;
+  }
+  
+  .section_button:hover {
+    background-color: #13a0c4;
+    box-shadow: 0px 0px 5px gray;
+  }
+  
+  .special_image {
+    overflow:hidden;
+    position: relative;
+  }
+  
+  .secImg {
+    width: 100%;
+  }
+  
+  .secImg:hover{
+    filter: grayscale(100%);
+  }
+  
+  .info {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  .info .special {
+    padding: 1em 3em 3em 3em;
+    text-align: left;
+    vertical-align: top;
+  }
+  
+  .info .special li {
+    margin-bottom: 7px;
+  }
+  
+  .info .special a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .info .special a:hover {
+    text-decoration: underline;
+    color: black;
+  }
+
+ /* Footer */
+  
+ .contact{
+  background-color: #212121;
+  color: whitesmoke;
+  display: flex;
+  padding: 20px;
+}
+.contactcolumn{
+  width: 33%;
+}
+.policieslink{
+  color: whitesmoke;
+  text-decoration: none;
+  display: block;
+  padding-top: 10px;
+}
+.followicon{
+  width: 50px;
+  display: inline-block;
+  padding-right: 1em;
+  opacity: 0.5;
+}
+.followicon:hover{
+  opacity: 1;
+}
