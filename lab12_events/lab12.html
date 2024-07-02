@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    
+    <title>Sebsatian Perdomo JS Events</title>
+</head>
+<body>
+
+    <h1>Sebastian Perdomo</h1>
+    <button class="btn1">PRESS ME</button>
+    <a class="linkqcc" href="http://www.qcc.cuny.edu" target="_blank" rel="noopener noreferrer">Visit QCC</a>
+   <h2>Mouse Events</h2>
+   <div class="colorcontainer">
+    <button class="btncolor">Press For Random Color</button>
+    <button class="btnolive">Press For Olive</button>
+    <button class="btnorange">Press For Orange</button>
+    <button class="btnreset">Press to Reset</button>
+
+   </div>
+<!--Tuesday June 18 
+    press me button that changes color when pressed -->
+   <h2>Event object in key event</h2>
+   <button class="btnpressme">PRESS ME</button>
+   <!-- Remove item on click -->
+   <h2>Fruit List</h2>
+   <ul id="listfruits" >
+    <li>kiwi</li>
+    <li>orange</li>
+    <li>fig</li>
+    <li>pear</li>
+    <li>tomato</li>
+</ul>
+
+<h2>Prevent default Events</h2>
+<a class="visitqcc " href="https://www.google.com">QCC Link</a>
+
+   <!-- Window events -->
+   <h2>Scroll event</h2>
+   <div id="content">
+    <h3>scrollable sentence</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut optio quisquam velit, reprehenderit esse inventore!</p>
+
+   </div>
+   <button class="btnscrollingright">scroll right</button>
+   <!-- Scroll by , auto or smooth -->
+   <!-- photo gallery -->
+   <section class="maincontainer">
+    <div class="gallery-container">
+        <img src="vin.jpg" alt="image 1" class="gallery-img">
+        <img src="vin2.jpg" alt="image 2" class="gallery-img">
+        <img src="vin3.jpg" alt="image 3" class="gallery-img">
+        <img src="vin4.jpg" alt="image 4" class="gallery-img">
+    </div>
+    <button class="btnright">&#x276F;</button>
+    <button class="btnleft">&#x276E;</button>
+   </section>
+   <div class="gotop">
+    <a href="#"><span>&#11161;</span></a>
+   </div>
+
+   <!-- Thursday 20 -->
+   <!-- submit event happens when the form is submitted, validating or sending -->
+ <div class="divForm">
+        <h2>Form events</h2>
+        <form id="myform">
+
+            <div class="controlblock">
+                    <lable for="username">Username <span>&#128100;</span></lable>
+                    <input type="text" id="username" placeholder="Type username" required>
+            </div>
+
+        <!-- password -->
+         <div class="controlblock">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter password" id="passwordfield" required>
+                <p class="passwordmsg">Must be 8+ characters</p>
+                <div class="passworderror"></div>
+         </div>
+
+         <div class="controlblock">
+            <label for="comments">Feedback and comments</label>
+            <textarea name="textcontent" id="comments" rows="15" cols="40" placeholder="No more then 2000 words" maxlength="2000"></textarea>
+            <div class="commentserror"></div>
+         </div>
+
+            <button type="submit" class="submitbutton">SUBMIT</button>
+   
+        </form>
+
+        <!-- display Welcome message if info are valid -->
+        <div class="greetings">
+            <p>Welcome to form events <span></span></p>
+        </div>
+ </div>
+   <script src="script.js">
+
+    </script>
+</body>
+</html>

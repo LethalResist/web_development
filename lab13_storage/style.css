@@ -1,0 +1,108 @@
+*{box-sizing: 
+    border-box;
+}
+
+.myform fieldset{
+width: 60%;
+margin: 20px auto;
+background-color: aliceblue;
+}
+
+.myform button{
+margin: 10px 0;
+}
+.controlblock{
+margin: 10px 0;
+}
+
+image{
+width: 100%;
+}
+.item1{
+    justify-items: center;
+    text-align: center;
+    width: fit-content;
+    box-shadow: 1px 1px 5px 1px gray;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 30px;
+}
+
+.item1 img{
+
+height: 50%;
+width: 100%;
+align-content: center;
+}
+
+.itemname{
+font-weight: 900;
+color: black;
+font-size: 1.3em;
+width: 10%;
+}
+
+.itemdiscription{
+font-style: italic;
+color: gray;
+font-size: 1.2em;
+margin-top: -20px;
+}
+
+.salesprice{
+color: red;
+text-decoration: underline;
+font-size: 1.3em;
+}
+
+.addtocart{
+display: block;
+background-color: darkorange;
+color: white;
+border: none;
+padding: 10px 20px;
+font-size: 1.2em;
+border-radius: 5px;
+cursor: pointer;
+margin: 0px auto;
+margin-top: 10px;
+}
+
+.bagcontainer{
+width: 80%;
+margin: 20px auto;
+background-color: lightgray;
+box-shadow: 1px 1px 5px 1px gray;
+padding: 20px;
+border-radius: 30px;
+display: flex;
+flex-wrap: nowrap;
+}
+
+.itemimg{
+width: 30%;
+}
+
+.itemdescription{
+width: 20%;
+}
+
+.itemprice{
+width: 30%;
+}
+
+.totleitemprice{
+width: 20%;
+}
+
+.unitprice{
+width: 10%;
+}
+
+.quantityitem{
+width: 10%;
+}
+
+.imgitem_display{
+width: 80%;
+}
