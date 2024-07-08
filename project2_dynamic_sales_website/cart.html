@@ -1,0 +1,121 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Levi's Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    
+        <div class="container">
+            <div class="navbar">
+                <div class="log">
+                    <img src="images/LEVI.svg" alt="" width="125vh">
+                    
+                </div>
+                <nav>
+                    <ul id="menu-items">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" alt="" width="30px" height="30px"><span id="cartCount">0</span></a>
+               <img src="images/menu.png" onclick="menutoggle()"class="menu-icon" >
+            </div>
+            
+        </div>   
+</div>
+<!-- --cart item details-- -->
+
+<div class="small-container cart-page">
+    <h1>Shopping bag</h1>
+    <section class="bagcontainer">
+        <div class="itemimg">
+            <h2>Item</h2>
+            <img class="imgitem_display" src="" alt="">
+        </div>
+        <div class="itemname">
+            <h2>Name</h2>
+            <p class="itemname_display"></p>
+        </div>
+        <div class="itemdescription">
+            <h2>Description</h2>
+            <p class="itemdescription_display"></p>
+        </div>
+        <div class="unitprice">
+            <h2>Price</h2>
+            <p class="unitprice_display"></p>
+        </div>
+        <div class="quantityitem">
+            <h2>Quantity</h2>
+            <p class="quantityitem_display"></p>
+        </div>
+        <div class="totalitemprice">
+            <h2>Total</h2>
+            <p class="totalitemprice_display"></p>
+        </div>
+    </section>
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+    <div class="row">
+        <div class="footer-col-1">
+            <h3>Download the Levi's App!</h3>
+            <p>Download Available for Android and IOS Stores</p>
+            <div class="app-logo">
+                <img src="images/play-store.png" alt="">
+                <img src="images/app-store.png" alt="">
+            </div>
+        </div>
+        <div class="footer-col-2">
+            <img src="images/LEVI.svg" alt="">
+            <p>Our Purpose is to sustainably make the pleasure and benefits of Levi's acessible to the many.</p>
+        </div>
+        <div class="footer-col-3">
+            <h3>Useful links</h3>
+            <ul>
+                <a href=""><li>Coupouns</li></a>
+                <a href=""><li>Blog</li></a>
+                <a href=""><li>Return Policy</li></a>
+                <a href=""><li>Join Community</li></a>
+            </ul>
+        </div>
+        <div class="footer-col-4">
+            <h3>Follow Us</h3>
+            <ul>
+                <a href=""><li>Facebook</li></a>
+                <a href=""><li>Instagram</li></a>
+                <a href=""><li>Twitter</li></a>
+                <a href=""><li>Youtube</li></a>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <p class="copyright">Copyright &copySebastian Perdomo 2024</p>
+</div>
+
+</body>
+<script>
+
+    //toggle the nav bar menu
+    var menuItems = document.getElementById("menu-items");
+    menuItems.style.maxHeight = "0px"
+
+    function menutoggle(){
+        if(menuItems.style.maxHeight == "0px"){
+            menuItems.style.maxHeight = "200px"
+        }
+        else{
+            menuItems.style.maxHeight = "0px"
+        }
+    }
+</script>
+<script src="index.js"></script>
+</html>
